@@ -1,7 +1,9 @@
-package exercise1;
+package br.edu.up.exercises;
+import br.edu.up.modelos.Aluno;
 import java.util.Scanner;
-public class Ex1{
-    public static void run(){
+
+public class Ex1 {
+    public static void run() {
         Scanner input = new Scanner(System.in);
         System.out.println("Insira o nome do aluno");
         String name = input.nextLine();
@@ -11,7 +13,7 @@ public class Ex1{
             notas[i] = input.nextDouble();
         }
         input.nextLine();
-        Aluno aluno = new Aluno(name, notas[0] ,notas[1] ,notas[2]);
+        Aluno aluno = new Aluno(name, notas[0], notas[1], notas[2]);
         aluno.media();
         input.close();
     }

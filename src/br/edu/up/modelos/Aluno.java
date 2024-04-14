@@ -1,10 +1,12 @@
-package exercise1;
+package br.edu.up.modelos;
+
 public class Aluno {
     String name;
     double notas[] = new double[3];
     int media;
     
     public Aluno(){}
+
     public Aluno(String nameP){
         this.name = nameP;
     }
