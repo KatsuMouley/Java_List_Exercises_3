@@ -5,28 +5,9 @@ public class Aluno {
     private double[] nota = new double[3];
     private int media;
     
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    public Aluno(String name, double[] nota){
         this.name = name;
-    }
-
-    public double[] getNota() {
-        return nota;
-    }
-
-    public void setNota(double[] notas) {
-        this.nota = notas;
-    }
-
-    public int getMedia() {
-        return media;
-    }
-
-    public void setMedia(int media) {
-        this.media = media;
+        this.nota = nota;
     }
 
     public void media(){
