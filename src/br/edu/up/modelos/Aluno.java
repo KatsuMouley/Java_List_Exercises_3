@@ -1,29 +1,37 @@
 package br.edu.up.modelos;
 
 public class Aluno {
-    String name;
-    double notas[] = new double[3];
-    int media;
+    private String name;
+    private double[] nota = new double[3];
+    private int media;
     
-    public Aluno(){}
+    public String getName() {
+        return name;
+    }
 
-    public Aluno(String nameP){
-        this.name = nameP;
+    public void setName(String name) {
+        this.name = name;
     }
-    public Aluno( double notasP1, double notasP2, double notasP3){
-        this.notas[0] = notasP1;
-        this.notas[1] = notasP2;
-        this.notas[2] = notasP3;
+
+    public double[] getNota() {
+        return nota;
     }
-    public Aluno(String nameP, double notasP1, double notasP2, double notasP3){
-        this.name = nameP;
-        this.notas[0] = notasP1;
-        this.notas[1] = notasP2;
-        this.notas[2] = notasP3;
+
+    public void setNota(double[] notas) {
+        this.nota = notas;
     }
+
+    public int getMedia() {
+        return media;
+    }
+
+    public void setMedia(int media) {
+        this.media = media;
+    }
+
     public void media(){
-        for (int i = 0; i < notas.length ; i++) {
-        media += notas[i];   
+        for (int i = 0; i < nota.length ; i++) {
+        media += nota[i];   
         }
         media = media / 3;
         System.out.println("A média de notas do aluno "+ name + " é igual a " + media);
