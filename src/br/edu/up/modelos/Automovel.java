@@ -1,8 +1,8 @@
 package br.edu.up.modelos;
 
 public class Automovel { 
-    double combustivel;
-    int kmP;//kmP é de km Percorridos
+    private double combustivel;
+    private int kmP;//kmP é de km Percorridos
     
 
     public Automovel(){}

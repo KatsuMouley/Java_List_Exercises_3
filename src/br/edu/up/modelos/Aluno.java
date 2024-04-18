@@ -5,6 +5,14 @@ public class Aluno {
     private double[] nota = new double[3];
     private int media;
     
+    public Aluno(){}
+    
+    public Aluno(String name){
+        this.name = name;
+    }
+    public Aluno( double[] nota){
+        this.nota = nota;
+    }
     public Aluno(String name, double[] nota){
         this.name = name;
         this.nota = nota;
