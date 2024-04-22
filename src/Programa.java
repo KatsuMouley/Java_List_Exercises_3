@@ -72,9 +72,9 @@ public class Programa{
             case 21:
                 Ex21.run();    
                 break;
-            // case 22:
-            //     Ex22.run();
-            //     break;
+            case 22:
+                Ex22.run();
+                break;
             // case 23:
             //     Ex23.run();                    
             //     break;
