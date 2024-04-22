@@ -8,11 +8,11 @@ public class Ex16 {
     public static void run() {
         Scanner input = new Scanner(System.in);
         Random rand = new Random();
-        Funcionarios[] funcionarios = new Funcionarios[5]; // 584 funcionários é demais, por isso simplificamos para apenas 5
+        Funcionario[] funcionarios = new Funcionario[5]; // 584 funcionários é demais, por isso simplificamos para apenas 5
         
         for (int i = 0; i < funcionarios.length; i++) {
             double salario = rand.nextDouble() * 30000 + 1500;
-            funcionarios[i] = new Funcionarios(salario);
+            funcionarios[i] = new Funcionario(salario);
         }
         
         char opt;
@@ -31,7 +31,7 @@ public class Ex16 {
         
         // Aplicação do reajuste
         for (int i = 0; i < funcionarios.length; i++) {
-            funcionarios[i].reajuste();
+            funcionarios[i].reajuste1();
         }
         
         System.out.println("Você quer ver os salários COM o reajuste?");

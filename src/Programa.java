@@ -57,9 +57,9 @@ public class Programa{
             case 16:
                 Ex16.run();
                 break;
-            // case 17:
-            //     Ex17.run();
-            //     break;
+            case 17:
+                Ex17.run();
+                break;
             // case 18:
             //     Ex18.run();    
             //     break;
