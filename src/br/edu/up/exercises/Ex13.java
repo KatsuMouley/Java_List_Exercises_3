@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ex13 {
     public static void run() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Insira quantas pessoas se alistaram para o serviço militar?");
+        System.out.println("Insira quantas pessoas se alistaram para o serviço militar voluntário?");
         int peopleQuantity = input.nextInt();
         input.nextLine();
         Pessoa[] pessoas = new Pessoa[peopleQuantity];
@@ -29,7 +29,7 @@ public class Ex13 {
         }
         for (int i = 0; i < saude.length; i++) {
             //  System.out.println( pessoas[i].nome + " " + pessoas[i].idade + " " + pessoas[i].saude + " " + pessoas[i].sexo);
-            if (pessoas[i].militar()) {
+            if (pessoas[i].alistamento()) {
                 System.out.println(pessoas[i].getNome()+" foi aprovado(a) para o serviço militar");   
             } else {
                 System.out.println(pessoas[i].getNome()+" não foi aprovado(a) para o serviço militar");   
