@@ -18,25 +18,25 @@ public class Human {
         if (gender == 'M') {
             if (height > 1.70) {
                 if (age <= 20)
-                    pesoIdeal = 72.7 * height - 58;
+                    pesoIdeal = (72.7 * height) - 58;
                 else if (age >= 21 && age <= 39)
-                    pesoIdeal = 72.7 * height - 53;
+                    pesoIdeal = (72.7 * height) - 53;
                 else
-                    pesoIdeal = 72.7 * height - 45;
+                    pesoIdeal = (72.7 * height) - 45;
             } else {
-                if (age <= 40)
-                    pesoIdeal = 72.7 * height - 50;
+                if (age <= 40 && age > 20)
+                    pesoIdeal = (72.7 * height) - 50;
                 else
-                    pesoIdeal = 72.7 * height - 58;
+                    pesoIdeal = (72.7 * height) - 58;
             }
         } else { // gender == 'F'
             if (height > 1.50) {
                 if (age >= 35)
-                    pesoIdeal = 62.1 * height - 45;
+                    pesoIdeal = (62.1 * height) - 45;
                 else
-                    pesoIdeal = 62.1 * height - 49;
+                    pesoIdeal = (62.1 * height) - 49;
             } else {
-                pesoIdeal = 62.1 * height - 44.7;
+                pesoIdeal = (62.1 * height) - 44.7;
             }
         }
 
