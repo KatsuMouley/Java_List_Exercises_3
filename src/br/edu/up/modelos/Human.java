@@ -8,6 +8,7 @@ public class Human {
     public Human(String name, int age, char gender, double weight, double height) {
         this.name = name;
         this.age = age;
+        this.gender = gender;
         this.weight = weight;
         this.height = height;
     }
@@ -15,28 +16,41 @@ public class Human {
     public void calcularPesoIdeal() {
         double pesoIdeal;
 
-        if (gender == 'M') {
-            if (height > 1.70) {
-                if (age <= 20)
-                    pesoIdeal = (72.7 * height) - 58;
-                else if (age >= 21 && age <= 39)
-                    pesoIdeal = (72.7 * height) - 53;
-                else
-                    pesoIdeal = (72.7 * height) - 45;
+        if (gender == 'M' || gender == 'm') {
+            if (this.height <= 1.70) {
+                if (age <= 20){
+                    System.out.println("peso tipo F1");
+                    pesoIdeal = (72.7 * this.height) - 58;
+                    }
+                    else if (age >= 40){
+                    System.out.println("peso tipo F2");
+                    pesoIdeal = (72.7 * this.height) - 45;
+                }else{
+                    System.out.println("peso tipo F3");
+                    pesoIdeal = (72.7 * this.height) - 53;
+                }
             } else {
-                if (age <= 40 && age > 20)
-                    pesoIdeal = (72.7 * height) - 50;
-                else
-                    pesoIdeal = (72.7 * height) - 58;
+                if (age < 40){
+                    System.out.println("peso tipo F4");
+                    pesoIdeal = (72.7 * this.height) - 50;
+                }else{
+                    System.out.println("peso tipo F5");
+                    pesoIdeal = (72.7 * this.height) - 58;}
             }
         } else { // gender == 'F'
             if (height > 1.50) {
-                if (age >= 35)
-                    pesoIdeal = (62.1 * height) - 45;
-                else
-                    pesoIdeal = (62.1 * height) - 49;
+                if (age >= 35){
+                    
+                    System.out.println("peso tipo F1");
+                    pesoIdeal = (62.1 * this.height) - 45;}
+                else{
+                    
+                    System.out.println("peso tipo F2");
+                    pesoIdeal = (62.1 * this.height) - 49;}
             } else {
-                pesoIdeal = (62.1 * height) - 44.7;
+                
+                System.out.println("peso tipo F3");
+                pesoIdeal = (62.1 * this.height) - 44.7;
             }
         }
 
