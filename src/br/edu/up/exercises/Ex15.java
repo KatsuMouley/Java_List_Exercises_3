@@ -17,10 +17,10 @@ public class Ex15 {
             gas = input.next().charAt(0);
         }
         int discount = 0;//Gasolina
-        GasDiscount car = new GasDiscount(gas, valor);
+        Desconto car = new Desconto(gas, valor);
         System.out.println("A porcentagem do desconto é de "+discount+"%");
         System.out.println("O cliente ira pagar no total "+car.desconto(discount)+" R$");
         
         input.close();
     }
-} 
+}

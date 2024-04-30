@@ -1,10 +1,10 @@
 package br.edu.up.modelos;
 
-public class GasDiscount {
+public class Desconto {
     private double valor;
     private char gas;
 
-    public GasDiscount(char gas, double valor){
+    public Desconto(char gas, double valor){
         this.gas = gas;
         this.valor = valor;
     }

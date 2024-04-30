@@ -10,7 +10,7 @@ public class Mercado {
 
     public double lucro(){
         double lucro;
-        lucro = custo - venda;
+        lucro = venda - custo;
         return lucro;
     }
 }
